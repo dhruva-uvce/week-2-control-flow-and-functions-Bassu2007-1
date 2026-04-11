@@ -28,3 +28,14 @@ if __name__ == "__main__":
     # Demonstrate call by reference
     # --- YOUR CODE HERE ---
     pass
+def add_element(Ist,element):
+    Ist.append(element)
+    print(Ist)
+def double_element(numbers):
+    for i in range(len(numbers)):
+        numbers[i]=numbers[i]*2
+    print(numbers)
+if __name__=="__main__":
+    numbers=[1,2,3]
+    add_element(numbers,4)
+    double_element(numbers)      
